@@ -27,7 +27,8 @@ const ToastMessage = () => {
               Toast.show({
                 text: 'Wrong password!',
                 buttonText: 'Okay',
-                duration: 1500,
+                duration: 1000,
+                position: 'bottom',
               });
             }}>
             <Text>Click me to get Toast Message</Text>

@@ -8,6 +8,8 @@ import ToastMessage from './toastMessage';
 import Loading from './loading';
 import CameraGalery from './cameraGalery';
 import NotificationTest from './notificationTest';
+import CustomFonts from './customFonts';
+import ViewAndZoom from './viewAndZoom';
 
 const Stack = createStackNavigator();
 
@@ -46,6 +48,21 @@ const Router = () => {
         <Stack.Screen
           name="TestNotification"
           component={NotificationTest}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="CustomFonts"
+          component={CustomFonts}
+          options={{
+            headerShown: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="ViewAndZoom"
+          component={ViewAndZoom}
           options={{
             headerShown: false,
           }}

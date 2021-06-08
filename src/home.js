@@ -21,7 +21,7 @@ const Home = ({navigation}) => {
       {/* Body */}
       <ScrollView>
         <TouchableOpacity
-          style={{...styles.btn, backgroundColor: '#1AEA15'}}
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
           onPress={() => {
             navigation.navigate('ToastMessage');
           }}>
@@ -29,15 +29,15 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{...styles.btn, backgroundColor: '#15B7EA'}}
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
           onPress={() => {
             navigation.navigate('CameraGalery');
           }}>
-          <Text style={{color: 'white'}}>Test Camera And Galery</Text>
+          <Text style={{color: 'black'}}>Test Camera And Galery</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{...styles.btn, backgroundColor: '#B3EA15'}}
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
           onPress={() => {
             navigation.navigate('Loading');
           }}>
@@ -45,11 +45,27 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{...styles.btn, backgroundColor: '#1544EA'}}
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
           onPress={() => {
             navigation.navigate('TestNotification');
           }}>
-          <Text style={{color: 'white'}}>Test Notification</Text>
+          <Text style={{color: 'black'}}>Test Notification</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('CustomFonts');
+          }}>
+          <Text style={{color: 'black'}}>Custom Fonts</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('ViewAndZoom');
+          }}>
+          <Text style={{color: 'black'}}>View and zoom Image</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
