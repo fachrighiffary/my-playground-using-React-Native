@@ -67,6 +67,14 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>View and zoom Image</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('HeaderAnsena');
+          }}>
+          <Text style={{color: 'black'}}>Header Ansena app</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

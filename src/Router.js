@@ -10,6 +10,7 @@ import CameraGalery from './cameraGalery';
 import NotificationTest from './notificationTest';
 import CustomFonts from './customFonts';
 import ViewAndZoom from './viewAndZoom';
+import HeaderAnsena from './headerAnsena';
 
 const Stack = createStackNavigator();
 
@@ -63,6 +64,13 @@ const Router = () => {
         <Stack.Screen
           name="ViewAndZoom"
           component={ViewAndZoom}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="HeaderAnsena"
+          component={HeaderAnsena}
           options={{
             headerShown: false,
           }}
