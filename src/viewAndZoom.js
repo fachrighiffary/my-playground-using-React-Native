@@ -29,8 +29,6 @@ const ViewAndZoom = () => {
     },
   ];
 
-  console.log(images);
-
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>

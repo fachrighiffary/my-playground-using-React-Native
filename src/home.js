@@ -75,6 +75,30 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>Header Ansena app</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('PlayDirection');
+          }}>
+          <Text style={{color: 'black'}}>Play Direction View</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('flatlistCarousel');
+          }}>
+          <Text style={{color: 'black'}}>Flatlist Carousell</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('snapCarousel');
+          }}>
+          <Text style={{color: 'black'}}>SnapCarousel Carousell</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

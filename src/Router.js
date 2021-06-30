@@ -11,6 +11,9 @@ import NotificationTest from './notificationTest';
 import CustomFonts from './customFonts';
 import ViewAndZoom from './viewAndZoom';
 import HeaderAnsena from './headerAnsena';
+import PlayDirection from './playDirection';
+import FlatlistCarousel from './flatlistCarousel';
+import SnapCarousel from './snapCarousel';
 
 const Stack = createStackNavigator();
 
@@ -71,6 +74,27 @@ const Router = () => {
         <Stack.Screen
           name="HeaderAnsena"
           component={HeaderAnsena}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="PlayDirection"
+          component={PlayDirection}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="flatlistCarousel"
+          component={FlatlistCarousel}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="snapCarousel"
+          component={SnapCarousel}
           options={{
             headerShown: false,
           }}
