@@ -14,6 +14,7 @@ import HeaderAnsena from './headerAnsena';
 import PlayDirection from './playDirection';
 import FlatlistCarousel from './flatlistCarousel';
 import SnapCarousel from './snapCarousel';
+import SwipeTinder from './swipeTinder';
 
 const Stack = createStackNavigator();
 
@@ -95,6 +96,13 @@ const Router = () => {
         <Stack.Screen
           name="snapCarousel"
           component={SnapCarousel}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="swipetinder"
+          component={SwipeTinder}
           options={{
             headerShown: false,
           }}

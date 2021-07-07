@@ -99,6 +99,13 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>SnapCarousel Carousell</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('swipetinder');
+          }}>
+          <Text style={{color: 'black'}}>Swipe Deck Tinder</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
