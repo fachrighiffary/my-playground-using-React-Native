@@ -113,6 +113,13 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>Flip Card</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('fadeanimation');
+          }}>
+          <Text style={{color: 'black'}}>Fade In, Fade Out Animation</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

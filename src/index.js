@@ -35,7 +35,10 @@ const FlipCard = () => {
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <Animated.View
-        style={[{transform: [{rotateY: interpolateFront}]}, styles.hidden]}>
+        style={[
+          {transform: [{rotateY: checkId != id ? null : interpolateFront}]},
+          styles.hidden,
+        ]}>
         <TouchableOpacity onPress={handleFlip}>
           <View style={{height: 300, width: 200, backgroundColor: 'blue'}} />
         </TouchableOpacity>
@@ -44,7 +47,7 @@ const FlipCard = () => {
         style={[
           styles.back,
           styles.hidden,
-          {transform: [{rotateY: interpolateBack}]},
+          {transform: [{rotateY: checkId != id ? null : interpolateBack}]},
         ]}>
         <TouchableOpacity onPress={handleFlip}>
           <View style={{height: 300, width: 200, backgroundColor: 'red'}} />

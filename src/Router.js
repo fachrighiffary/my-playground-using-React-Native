@@ -16,6 +16,7 @@ import FlatlistCarousel from './flatlistCarousel';
 import SnapCarousel from './snapCarousel';
 import SwipeTinder from './swipeTinder';
 import FlipCard from '.';
+import FadeAnimation from './fadeAnimation';
 
 const Stack = createStackNavigator();
 
@@ -111,6 +112,13 @@ const Router = () => {
         <Stack.Screen
           name="flipcard"
           component={FlipCard}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="fadeanimation"
+          component={FadeAnimation}
           options={{
             headerShown: false,
           }}
