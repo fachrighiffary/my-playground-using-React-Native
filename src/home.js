@@ -106,6 +106,13 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>Swipe Deck Tinder</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('flipcard');
+          }}>
+          <Text style={{color: 'black'}}>Flip Card</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

@@ -15,6 +15,7 @@ import PlayDirection from './playDirection';
 import FlatlistCarousel from './flatlistCarousel';
 import SnapCarousel from './snapCarousel';
 import SwipeTinder from './swipeTinder';
+import FlipCard from '.';
 
 const Stack = createStackNavigator();
 
@@ -103,6 +104,13 @@ const Router = () => {
         <Stack.Screen
           name="swipetinder"
           component={SwipeTinder}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="flipcard"
+          component={FlipCard}
           options={{
             headerShown: false,
           }}
