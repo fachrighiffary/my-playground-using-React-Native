@@ -17,6 +17,7 @@ import SnapCarousel from './snapCarousel';
 import SwipeTinder from './swipeTinder';
 import FlipCard from '.';
 import FadeAnimation from './fadeAnimation';
+import TimerCountdown from './timerCountdown';
 
 const Stack = createStackNavigator();
 
@@ -119,6 +120,13 @@ const Router = () => {
         <Stack.Screen
           name="fadeanimation"
           component={FadeAnimation}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="timer"
+          component={TimerCountdown}
           options={{
             headerShown: false,
           }}

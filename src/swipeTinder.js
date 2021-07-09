@@ -156,61 +156,62 @@ class SwipeTinder extends Component {
           </Animated.View>
         );
       } else {
-        // return (
-        //   <Animated.View
-        //     key={id}
-        //     style={{
-        //       height: Height - 140,
-        //       width: Width,
-        //       position: 'absolute',
-        //       justifyContent: 'center',
-        //       alignItems: 'center',
-        //       padding: 15,
-        //       opacity: this.nextImageOpacity,
-        //       transform: [
-        //         {
-        //           scale: this.nextImageScale,
-        //         },
-        //       ],
-        //     }}>
-        //     <View
-        //       style={{
-        //         flex: 1,
-        //         width: Width - 40,
-        //         height: null,
-        //         borderRadius: 15,
-        //         backgroundColor: clr,
-        //         justifyContent: 'center',
-        //         alignItems: 'center',
-        //         flexDirection: 'row',
-        //         justifyContent: 'space-between',
-        //         paddingHorizontal: -100,
-        //         position: 'relative',
-        //       }}>
-        //       <Text
-        //         style={{
-        //           marginLeft: -300,
-        //           fontSize: 100,
-        //           transform: [{rotate: '-10deg'}],
-        //           color: 'white',
-        //         }}>
-        //         Truth
-        //       </Text>
-        //       <Text
-        //         style={{
-        //           marginRight: -300,
-        //           fontSize: 100,
-        //           transform: [{rotate: '10deg'}],
-        //           color: 'white',
-        //         }}>
-        //         Dare
-        //       </Text>
-        //     </View>
-        //   </Animated.View>
-        // );
-        return null;
+        return (
+          <Animated.View
+            {...this.panResponder.panHandlers}
+            key={id}
+            style={{
+              height: Height - 140,
+              width: Width,
+              position: 'absolute',
+              justifyContent: 'center',
+              alignItems: 'center',
+              padding: 15,
+              opacity: this.nextImageOpacity,
+              transform: [
+                {
+                  scale: this.nextImageScale,
+                },
+              ],
+            }}>
+            <View
+              style={{
+                flex: 1,
+                width: Width - 40,
+                height: null,
+                borderRadius: 15,
+                backgroundColor: clr,
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                paddingHorizontal: -100,
+                position: 'relative',
+              }}>
+              <Text
+                style={{
+                  marginLeft: -300,
+                  fontSize: 100,
+                  transform: [{rotate: '-10deg'}],
+                  color: 'white',
+                }}>
+                Truth
+              </Text>
+              <Text
+                style={{
+                  marginRight: -300,
+                  fontSize: 100,
+                  transform: [{rotate: '10deg'}],
+                  color: 'white',
+                }}>
+                Dare
+              </Text>
+            </View>
+          </Animated.View>
+        );
+        // return null;
       }
-    });
+    }).reverse();
   };
 
   render() {

@@ -120,6 +120,13 @@ const Home = ({navigation}) => {
           }}>
           <Text style={{color: 'black'}}>Fade In, Fade Out Animation</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={{...styles.btn, backgroundColor: 'lightgrey'}}
+          onPress={() => {
+            navigation.navigate('timer');
+          }}>
+          <Text style={{color: 'black'}}>Timer Countdown</Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
