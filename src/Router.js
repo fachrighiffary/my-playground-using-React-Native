@@ -18,6 +18,8 @@ import SwipeTinder from './swipeTinder';
 import FlipCard from '.';
 import FadeAnimation from './fadeAnimation';
 import TimerCountdown from './timerCountdown';
+import ShareScreen from './share';
+import MultiLanguage from './multiLanguage';
 
 const Stack = createStackNavigator();
 
@@ -127,6 +129,20 @@ const Router = () => {
         <Stack.Screen
           name="timer"
           component={TimerCountdown}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="share"
+          component={ShareScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="multilang"
+          component={MultiLanguage}
           options={{
             headerShown: false,
           }}

@@ -143,6 +143,23 @@ const Home = ({navigation}) => {
             <Text style={{color: 'black'}}>Timer Countdown</Text>
           </TouchableOpacity>
         </View>
+
+        <View style={styles.flexDir}>
+          <TouchableOpacity
+            style={{...styles.btn, backgroundColor: 'lightgrey'}}
+            onPress={() => {
+              navigation.navigate('share');
+            }}>
+            <Text style={{color: 'black'}}>Share </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{...styles.btn, backgroundColor: 'lightgrey'}}
+            onPress={() => {
+              navigation.navigate('multilang');
+            }}>
+            <Text style={{color: 'black'}}>Multi language</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </View>
   );
