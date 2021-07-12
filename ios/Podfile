@@ -12,6 +12,8 @@ target 'playground' do
     :hermes_enabled => false
   )
 
+  pod 'RNShare', :path => '../node_modules/react-native-share'
+
   target 'playgroundTests' do
     inherit! :complete
     # Pods for testing
