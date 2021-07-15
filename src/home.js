@@ -160,6 +160,20 @@ const Home = ({navigation}) => {
             <Text style={{color: 'black'}}>Multi language</Text>
           </TouchableOpacity>
         </View>
+
+        <View style={styles.flexDir}>
+          <TouchableOpacity
+            style={{...styles.btn, backgroundColor: 'lightgrey'}}
+            onPress={() => {
+              navigation.navigate('btmSheet');
+            }}>
+            <Text style={{color: 'black'}}>Bottom Sheet</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{...styles.btn, backgroundColor: 'lightgrey'}}>
+            <Text style={{color: 'black'}}>None</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </View>
   );

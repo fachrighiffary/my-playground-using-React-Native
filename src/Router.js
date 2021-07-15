@@ -20,6 +20,7 @@ import FadeAnimation from './fadeAnimation';
 import TimerCountdown from './timerCountdown';
 import ShareScreen from './share';
 import MultiLanguage from './multiLanguage';
+import BottomSheet from './bottomSheet';
 
 const Stack = createStackNavigator();
 
@@ -143,6 +144,13 @@ const Router = () => {
         <Stack.Screen
           name="multilang"
           component={MultiLanguage}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="btmSheet"
+          component={BottomSheet}
           options={{
             headerShown: false,
           }}
