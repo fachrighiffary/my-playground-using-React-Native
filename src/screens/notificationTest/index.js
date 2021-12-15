@@ -6,17 +6,20 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { showNotification } from '../../utils/notification.android';
 
 const NotificationTest = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <SafeAreaView>
         <View style={styles.header}>
           <Text style={styles.txt}>Notification Test</Text>
         </View>
       </SafeAreaView>
       <View style={styles.body}>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity style={styles.btn} activeOpacity={0.6} onPress={() => {
+          showNotification('hello', 'Local Notification')
+        }}>
           <Text>Push Local Notification</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.btn}>

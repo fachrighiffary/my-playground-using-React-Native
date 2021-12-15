@@ -1,13 +1,13 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import {ScrollView} from 'react-native-gesture-handler';
-import ActionSheet from './components/actionSheet';
+import { Dimensions, StyleSheet, Text, View } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+import ActionSheet from '../../components/actionSheet';
 
-const {Width, Height} = Dimensions.get('screen');
+const { Width, Height } = Dimensions.get('screen');
 
 const BottomSheet = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <View style={styles.container}>
         <Text>INi adalah btm Sheet</Text>
       </View>

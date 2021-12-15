@@ -19,6 +19,7 @@ const CameraGalery = () => {
   const pickSingleWithCamera = (cropping, mediaType = 'photo') => {
     ImagePicker.openCamera({
       cropping: cropping,
+      useFrontCamera: true,
       width: 500,
       height: 500,
       includeExif: true,
@@ -175,7 +176,7 @@ const CameraGalery = () => {
   const renderVideo = video => {
     console.log('rendering video');
     return (
-      <View style={{height: 300, width: 300}}>
+      <View style={{height: 300, width: 300, alignSelf: 'center'}}>
         <Video
           source={{uri: video.uri, type: video.mime}}
           style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0}}
@@ -222,16 +223,16 @@ const CameraGalery = () => {
         </View>
       </SafeAreaView>
       <ScrollView>
-        <ScrollView nestedScrollEnabled={true} horizontal={true}>
+        <View nestedScrollEnabled={true} horizontal={true}>
           {image ? renderAsset(image) : null}
           {images
             ? images.map(i => <View key={i.uri}>{renderAsset(i)}</View>)
             : null}
-        </ScrollView>
+        </View>
 
         <TouchableOpacity
           onPress={() => pickSingleWithCamera(false)}
-          style={styles.button}>
+          style={[styles.button, {marginTop: 40}]}>
           <Text style={styles.text}>Select Single Image With Camera</Text>
         </TouchableOpacity>
         <TouchableOpacity

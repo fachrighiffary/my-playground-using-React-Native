@@ -1,26 +1,27 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
-import {createStackNavigator} from '@react-navigation/stack';
-import Home from './home';
-import ToastMessage from './toastMessage';
-import Loading from './loading';
-import CameraGalery from './cameraGalery';
-import NotificationTest from './notificationTest';
-import CustomFonts from './customFonts';
-import ViewAndZoom from './viewAndZoom';
-import HeaderAnsena from './headerAnsena';
-import PlayDirection from './playDirection';
-import FlatlistCarousel from './flatlistCarousel';
-import SnapCarousel from './snapCarousel';
-import SwipeTinder from './swipeTinder';
-import FlipCard from '.';
-import FadeAnimation from './fadeAnimation';
-import TimerCountdown from './timerCountdown';
-import ShareScreen from './share';
-import MultiLanguage from './multiLanguage';
-import BottomSheet from './bottomSheet';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import ToastMessage from './screens/toastMessage';
+import Loading from './screens/loading';
+import CameraGalery from './screens/cameraGalery';
+import NotificationTest from './screens/notificationTest';
+import CustomFonts from './screens/customfonts';
+import ViewAndZoom from './screens/viewAndZoom';
+import HeaderAnsena from './screens/headerAnsena';
+import PlayDirection from './screens/playDirection';
+import FlatlistCarousel from './screens/flatlistCarousel';
+import SnapCarousel from './screens/snapCarousel';
+import SwipeTinder from './screens/swipeTinder';
+import FlipCard from './screens/flipCard';
+import FadeAnimation from './screens/fadeAnimation';
+import TimerCountdown from './screens/timerCountdown';
+import ShareScreen from './screens/share';
+import MultiLanguage from './screens/multilanguage';
+import BottomSheet from './screens/bottomSheet';
+import Home from './screens/home';
 
 const Stack = createStackNavigator();
 

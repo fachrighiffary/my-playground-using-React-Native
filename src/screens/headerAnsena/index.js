@@ -7,8 +7,8 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {NavigationContainer} from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 import Profile from './profile';
 import Job from './job';
 import Event from './event';
@@ -22,17 +22,17 @@ const HeaderAnsena = () => {
       <View style={styles.container}>
         <SafeAreaView>
           <View style={styles.header}>
-            <View style={{height: 25, width: 25, backgroundColor: 'pink'}} />
-            <View style={{flexDirection: 'row'}}>
+            <View style={{ height: 25, width: 25, backgroundColor: 'pink' }} />
+            <View style={{ flexDirection: 'row' }}>
               <Text>
                 Hello
-                <Text style={{fontWeight: 'bold'}}> Admin</Text>
+                <Text style={{ fontWeight: 'bold' }}> Admin</Text>
               </Text>
               <TouchableOpacity
-                style={{marginLeft: 20}}
+                style={{ marginLeft: 20 }}
                 onPress={() => alert()}>
                 <View
-                  style={{height: 25, width: 25, backgroundColor: 'pink'}}
+                  style={{ height: 25, width: 25, backgroundColor: 'pink' }}
                 />
               </TouchableOpacity>
             </View>
@@ -46,7 +46,7 @@ const HeaderAnsena = () => {
             upperCaseLabel: false,
             showIcon: true,
 
-            labelStyle: {fontSize: 14, textTransform: 'none'},
+            labelStyle: { fontSize: 14, textTransform: 'none' },
             tabStyle: {
               paddingTop: 0,
               paddingBottom: 20,

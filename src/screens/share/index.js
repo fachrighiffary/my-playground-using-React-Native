@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Share from 'react-native-share';
-import images from './images/imagesBase64';
+import images from '../../images/imagesBase64';
 
 const ShareScreen = () => {
   const [packageSearch, setPackageSearch] = useState('');
@@ -9,7 +9,7 @@ const ShareScreen = () => {
   const [result, setResult] = useState('');
 
   const checkIfPackageIsInstalled = async () => {
-    const {isInstalled} = await Share.isPackageInstalled(packageSearch);
+    const { isInstalled } = await Share.isPackageInstalled(packageSearch);
 
     Alert.alert(
       `Package: ${packageSearch}`,
@@ -171,7 +171,7 @@ const ShareScreen = () => {
         style={styles.btn}
         activeOpacity={0.6}
         onPress={shareSingleImage}>
-        <Text style={{color: 'white'}}>Share</Text>
+        <Text style={{ color: 'white' }}>Share</Text>
       </TouchableOpacity>
     </View>
   );
