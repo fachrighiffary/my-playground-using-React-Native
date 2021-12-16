@@ -22,6 +22,7 @@ import ShareScreen from './screens/share';
 import MultiLanguage from './screens/multilanguage';
 import BottomSheet from './screens/bottomSheet';
 import Home from './screens/home';
+import PdfSignature from './screens/pdfSignature';
 
 const Stack = createStackNavigator();
 
@@ -152,6 +153,13 @@ const Router = () => {
         <Stack.Screen
           name="btmSheet"
           component={BottomSheet}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="PdfSignature"
+          component={PdfSignature}
           options={{
             headerShown: false,
           }}
