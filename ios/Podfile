@@ -14,6 +14,10 @@ target 'playground' do
 
   pod 'RNShare', :path => '../node_modules/react-native-share'
 
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'react-native-image-editor', :path => '../node_modules/@react-native-community/image-editor'
+
   target 'playgroundTests' do
     inherit! :complete
     # Pods for testing

@@ -186,13 +186,6 @@ const PdfSignature = () => {
               >
                 <Text style={styles.buttonText}>Sign Document</Text>
               </TouchableOpacity>
-              <View>
-                <Image 
-                  source={{uri: "http://www.alamedadev.com/icons/icon-512x512.png"}}
-                  style={{width: 40, height: 40, alignSelf: "center"}}
-                />
-                <Text style={styles.headerText}>alamedadev.com</Text>
-              </View>
             </View>
           ))}
         </View>

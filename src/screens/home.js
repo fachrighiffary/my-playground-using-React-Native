@@ -30,7 +30,7 @@ const Home = ({ navigation }) => {
     { id: 15, title: 'flipcard' },
     { id: 16, title: 'TestNotification' },
     { id: 17, title: 'PdfSignature' },
-    { id: 17, title: 'None' },
+    { id: 17, title: 'ImageCropBoundary' },
   ]
 
 
@@ -55,7 +55,7 @@ const Home = ({ navigation }) => {
               onPress={() => {
                 navigation.navigate(item.title);
               }}>
-              <Text style={{ color: 'black' }}>{item.title.toUpperCase()}</Text>
+              <Text style={{ color: 'black', fontSize: 11, textAlign: 'center' }}>{item.title.toUpperCase()}</Text>
             </TouchableOpacity>
           )
         }}

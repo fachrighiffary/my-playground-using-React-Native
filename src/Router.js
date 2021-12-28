@@ -23,6 +23,8 @@ import MultiLanguage from './screens/multilanguage';
 import BottomSheet from './screens/bottomSheet';
 import Home from './screens/home';
 import PdfSignature from './screens/pdfSignature';
+import ImageCropBoundary from './screens/imageCropBoundary';
+import ShowImage from './screens/imageCropBoundary/showImage';
 
 const Stack = createStackNavigator();
 
@@ -160,6 +162,20 @@ const Router = () => {
         <Stack.Screen
           name="PdfSignature"
           component={PdfSignature}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ImageCropBoundary"
+          component={ImageCropBoundary}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ShowImage"
+          component={ShowImage}
           options={{
             headerShown: false,
           }}
